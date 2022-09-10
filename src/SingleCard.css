@@ -1,0 +1,32 @@
+.card {
+   position: relative;
+}
+
+.card img {
+   border: 2px solid #fff;
+   border-radius: 3px; 
+   transition: 0.8s cubic-bezier(0.2, 0.84, 0.2, 1);
+}
+
+.card-back {
+   position: absolute;
+   top: 0;  
+   left: 0;
+   transform: rotateY(90deg);
+}
+.flipped .card-back {
+   z-index: 1;
+}
+img {
+   width: 100%;
+   height: auto;
+   verticle-align: middle;
+}
+
+.flipped .card-back {
+   transform: rotateY(0deg);
+}
+
+.flipped .card-front {
+   transform: rotateY(90deg);
+}
